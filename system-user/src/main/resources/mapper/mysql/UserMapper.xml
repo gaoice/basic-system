@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gaoice.system.user.mapper.UserMapper">
+
+    <select id="findUserById" parameterType="long" resultType="com.gaoice.system.user.entity.UserDO">
+        select * from com_gao_ice_user where id = #{id}
+    </select>
+
+    <insert id="saveUser" parameterType="com.gaoice.system.user.entity.UserDO">
+        insert into com_gao_ice_user (username,password,nickname,sex,status)
+        values (#{username},#{password},#{nickname},#{sex},#{status})
+    </insert>
+</mapper>

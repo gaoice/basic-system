@@ -19,6 +19,7 @@
 - Spring OAuth2 简单使用
 - Spring Actuator 使用
 - Spring WebSocket 配置和使用
+- Netty Server 和 Client 配置和使用
 
 ...待完善
 
